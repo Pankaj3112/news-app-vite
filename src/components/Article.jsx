@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useFavourites } from "../context/FavouriteContext";
 
 const Article = ({ article, gridView, index }) => {
-  const { isFavourite, addFavourite, removeFavourite, handleFavouriteClick } =
+  const { isFavourite, handleFavouriteClick } =
     useFavourites();
   const articleIsFavorite = isFavourite(article);
 
@@ -16,13 +16,13 @@ const Article = ({ article, gridView, index }) => {
       transition={{ duration: 0.6 }}
       className={`${
         gridView ? "max-w-sm" : "w-full"
-      } rounded overflow-hidden shadow-lg relative mx-auto`}
+      } rounded overflow-hidden shadow-lg relative mx-auto `}
     >
       <img
         src={article.urlToImage}
         alt={article.title}
         className={
-          gridView ? "w-full h-36 object-cover" : "w-full h-96 object-cover"
+          gridView ? "w-full h-36 object-cover " : "w-full h-96 object-cover"
         }
       />
       <div className="px-6 py-3">

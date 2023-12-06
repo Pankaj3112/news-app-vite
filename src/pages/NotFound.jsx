@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="text-center">
-        <p className="text-base font-semibold text-teal-600">404</p>
+        <p className="text-base font-semibold text-[#E76F51]">404</p>
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Page not found
         </h1>
@@ -15,7 +15,7 @@ const NotFound = () => {
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link
             to="/"
-            className="rounded-md bg-teal-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
+            className="rounded-md bg-[#E76F51] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#264653] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#264653]"
           >
             Go back home
           </Link>

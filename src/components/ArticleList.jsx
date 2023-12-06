@@ -14,16 +14,16 @@ const ArticleList = ({ articles }) => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex justify-end mb-4">
-        <IconButton onClick={handleToggleView} className="p-2">
+        <IconButton onClick={handleToggleView} className="p-2 scale-110">
           {gridView ? <ViewList /> : <ViewModule />}
         </IconButton>
       </div>
 
-	  {articles.length === 0 && (
-		<div className="flex justify-center items-center h-96">
-		  <h1 className="text-3xl text-gray-400">No articles found</h1>
-		</div>
-	  )}
+      {articles.length === 0 && (
+        <div className="flex justify-center items-center h-96">
+          <h1 className="text-3xl text-gray-400">No articles found</h1>
+        </div>
+      )}
 
       <div
         className={
@@ -33,7 +33,12 @@ const ArticleList = ({ articles }) => {
         }
       >
         {articles.map((article, index) => (
-          <Article key={article.title} article={article} isGrid={gridView} index={index} />
+          <Article
+            key={article.title}
+            article={article}
+            isGrid={gridView}
+            index={index}
+          />
         ))}
       </div>
     </div>
