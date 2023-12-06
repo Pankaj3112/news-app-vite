@@ -29,7 +29,7 @@ const ArticleList = ({ articles }) => {
         className={
           gridView
             ? "grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 "
-            : "flex flex-col gap-10 px-20"
+            : "flex flex-col gap-10 px-5 lg:px-20"
         }
       >
         {articles.map((article, index) => (

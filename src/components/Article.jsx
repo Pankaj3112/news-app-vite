@@ -15,7 +15,7 @@ const Article = ({ article, gridView, index }) => {
         transition={{ duration: 0.6}}
         className={`${
           gridView ? "max-w-sm" : "w-full"
-        } rounded overflow-hidden shadow-lg relative mx-auto `}
+        } rounded-lg overflow-hidden shadow-lg relative mx-auto bg-white`}
       >
         <img
           src={article.urlToImage}
