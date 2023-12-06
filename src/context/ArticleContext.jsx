@@ -13,9 +13,7 @@ const ArticleProvider = ({ children }) => {
   const fetchArticles = async (url) => {
     try {
       const response = await fetch(url);
-
       const data = await response.json();
-      console.log(data);
 
       data.articles.forEach((article) => {
         article.customId = createId(article);
