@@ -1,0 +1,10 @@
+import React from "react";
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+
+const Protected = ({ Component, ...rest }) => {
+  const { user } = useAuth();
+  return !user ? <Component {...rest} /> : <Navigate to="/" />;
+};
+
+export default Protected;
