@@ -1,6 +1,7 @@
 # News App
 
 Stay informed with our News App, a dynamic platform designed to provide users with top headlines and personalized news experiences. This app utilizes Firebase for user authentication and data storage, offering features such as:
+- [Demo Video with Approach Explanation](https://drive.google.com/file/d/1LBErta6WBNGTRDV8R4zuD7IysEYvAvEJ/view?usp=sharing)
 
 ## Important Note
 
